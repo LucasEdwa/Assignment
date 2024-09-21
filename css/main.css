@@ -1,0 +1,92 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body header {
+  background-image: url("../assets/negative-space-black-forest-dawn.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 14rem;
+}
+body header nav {
+  background-color: gray;
+  opacity: 0.5;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+body header nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  padding-right: 15px;
+}
+body header nav ul li {
+  list-style-type: none;
+}
+body header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+body header nav ul li a:hover {
+  text-decoration: underline;
+}
+body header nav #menu-button {
+  display: none;
+}
+body header .header-text {
+  color: white;
+  text-align: center;
+}
+body header .header-text h1 {
+  font-size: 2em;
+}
+body header .header-text p {
+  font-size: 1em;
+}
+body header .arrow-down {
+  text-align: center;
+}
+body header .arrow-down a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  body header {
+    gap: 12rem;
+  }
+  body header nav {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+  body header nav #menu-button {
+    display: block;
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+    transition: transform 0.3s ease;
+  }
+  body header nav #menu-button.open {
+    transform: rotate(90deg);
+  }
+  body header nav ul {
+    gap: 10px;
+    padding-right: 0;
+    transition: max-height 0.3s ease; /* Smooth transition */
+    display: none;
+    width: 100%;
+  }
+  body header nav ul li a {
+    font-size: 1em;
+  }
+  body header nav .arrow-down a {
+    color: white;
+    text-decoration: none;
+  }
+}/*# sourceMappingURL=main.css.map */
