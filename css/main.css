@@ -1,92 +1,249 @@
+/* mobile first styles */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   margin: 0;
   padding: 0;
+  color: white;
 }
-body header {
+body #home {
   background-image: url("../assets/negative-space-black-forest-dawn.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 14rem;
+  gap: 12rem;
 }
-body header nav {
-  background-color: gray;
-  opacity: 0.5;
-  padding: 10px;
+body #home nav {
   display: flex;
   justify-content: flex-end;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  /* Hamburger Menu Button */
+  /* Menu List (Hidden by default) */
+  /* When menu-toggle is checked (menu opened) */
 }
-body header nav ul {
-  list-style-type: none;
-  display: flex;
-  gap: 20px;
-  padding-right: 15px;
-}
-body header nav ul li {
-  list-style-type: none;
-}
-body header nav ul li a {
-  color: white;
-  text-decoration: none;
-}
-body header nav ul li a:hover {
-  text-decoration: underline;
-}
-body header nav #menu-button {
+body #home nav #menu-toggle {
   display: none;
 }
-body header .header-text {
-  color: white;
+body #home nav #menu-button {
+  background: none;
+  align-self: flex-end;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  position: relative;
+}
+body #home nav #menu-button div {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  border-radius: 5px;
+  transition: all 0.4s ease;
+  position: absolute;
+}
+body #home nav #menu-button .bar1 {
+  top: 0;
+}
+body #home nav #menu-button .bar2 {
+  top: 50%;
+  transform: translateY(-50%);
+}
+body #home nav #menu-button .bar3 {
+  bottom: 0;
+}
+body #home nav ul.menu-list {
+  display: none;
+  list-style: none;
+  flex-direction: column;
+  background-color: rgba(128, 128, 128, 0.301);
+  width: 100%;
+  padding: 10px;
+  gap: 10px;
+  position: absolute;
+  width: 94%;
+}
+body #home nav ul.menu-list li {
   text-align: center;
 }
-body header .header-text h1 {
-  font-size: 2em;
-}
-body header .header-text p {
-  font-size: 1em;
-}
-body header .arrow-down {
-  text-align: center;
-}
-body header .arrow-down a {
+body #home nav ul.menu-list li a {
   color: white;
   text-decoration: none;
 }
+body #home nav ul.menu-list li a:hover {
+  text-decoration: underline;
+}
+body #home nav #menu-toggle:checked ~ ul.menu-list {
+  display: flex;
+}
+body #home nav #menu-toggle:checked ~ #menu-button .bar1 {
+  transform: rotate(50deg) translate(7px, 7px);
+}
+body #home nav #menu-toggle:checked ~ #menu-button .bar2 {
+  opacity: 0;
+}
+body #home nav #menu-toggle:checked ~ #menu-button .bar3 {
+  transform: rotate(-50deg) translate(7px, -7px);
+}
+body #home .header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+body #home .header-text h1 {
+  font-size: 2rem;
+}
+body #home .header-text p {
+  font-size: 1.2rem;
+  width: 60%;
+}
+body #home .header-text .arrow-down-about {
+  margin-top: 11rem;
+}
+body #home .header-text .arrow-down-about a {
+  color: white;
+  font-size: 1.5rem;
+  scroll-behavior: smooth;
+}
+body #about {
+  color: black;
+  min-height: 100vh;
+}
+body #about h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 10px;
+}
+body #about .team-container {
+  display: flex;
+  flex-direction: column;
+}
+body #about .team-container .team-member {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body #about .team-container .team-member img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body #about .team-container .team-member p {
+  text-align: left;
+  background-color: rgb(212, 210, 212);
+  width: 255px;
+  border-radius: 3px;
+  padding: 25px;
+  align-items: center;
+}
+body #about .team-container .team-member p i {
+  font-size: 2.5rem;
+}
+body #about .arrow-down-section {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+body #about .arrow-down-section a {
+  color: black;
+  font-size: 1.5rem;
+}
+body #contact {
+  background-color: rgb(17, 6, 42);
+  gap: 2rem;
+  padding: 2rem;
+}
+body #contact .contact-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 2rem;
+  align-items: self-start;
+  gap: 2rem;
+}
+body #contact .contact-container h2 {
+  font-size: 2rem;
+}
+body #contact .contact-container .social-medias i {
+  color: white;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
 
-@media (max-width: 480px) {
-  body header {
-    gap: 12rem;
-  }
-  body header nav {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: flex-end;
-  }
-  body header nav #menu-button {
-    display: block;
-    background-color: transparent;
-    padding: 10px;
-    border: none;
-    transition: transform 0.3s ease;
-  }
-  body header nav #menu-button.open {
-    transform: rotate(90deg);
-  }
-  body header nav ul {
-    gap: 10px;
-    padding-right: 0;
-    transition: max-height 0.3s ease; /* Smooth transition */
-    display: none;
+@media screen and (min-width: 768px) {
+  body {
     width: 100%;
   }
-  body header nav ul li a {
-    font-size: 1em;
+  body #home {
+    gap: 6rem;
+    min-height: 100vh;
   }
-  body header nav .arrow-down a {
+  body #home nav {
+    background-color: rgba(128, 128, 128, 0.653);
+    padding: 10px;
+  }
+  body #home nav #menu-toggle {
+    display: none;
+  }
+  body #home nav ul.menu-list {
+    display: flex;
+    background-color: transparent;
+    position: relative;
+    gap: 1rem;
+    justify-content: flex-end;
+    flex-direction: row;
+  }
+  body #home nav ul.menu-list li {
+    list-style: none;
+    text-decoration: none;
+  }
+  body #home nav ul.menu-list li a {
     color: white;
     text-decoration: none;
+  }
+  body #home nav #menu-button {
+    display: none;
+  }
+  body #home .header-text {
+    text-align: center;
+    margin-top: 7rem;
+  }
+  body #home .header-text .arrow-down-about {
+    margin-top: 10rem;
+  }
+  body #home .header-text .arrow-down-about a {
+    color: white;
+    font-size: 1.5rem;
+  }
+  body #about .team-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 2rem;
+  }
+  body #about .team-container .team-member img {
+    width: 300px;
+    height: 300px;
+  }
+  body #about .team-container .team-member p {
+    width: 450px;
+    padding: 15px;
+  }
+  body #contact .contact-container {
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 2rem;
   }
 }/*# sourceMappingURL=main.css.map */

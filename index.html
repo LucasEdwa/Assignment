@@ -4,65 +4,108 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/main.css" rel="stylesheet" />
-    <script src="script/main.js" defer></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <title>Given design</title>
   </head>
   <body>
-    <header>
+    <header id="home">
       <nav>
+        <!-- Hidden checkbox to toggle menu -->
+        <input type="checkbox" id="menu-toggle" hidden />
+        <!-- Menu list -->
         <ul class="menu-list">
-          <li><a href="#">Hem</a></li>
-          <li><a href="#">om</a></li>
-          <li><a href="#">Kontakt</a></li>
+          <li><a href="#home">Hem</a></li>
+          <li><a href="#about">Om</a></li>
+          <li><a href="#contact">Kontakt</a></li>
         </ul>
-        <button id="menu-button">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-align-justify"
-          >
-            <line x1="3" x2="21" y1="6" y2="6" />
-            <line x1="3" x2="21" y1="12" y2="12" />
-            <line x1="3" x2="21" y1="18" y2="18" />
-          </svg>
-        </button>
+        <!-- Hamburger Button -->
+        <label for="menu-toggle" id="menu-button">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </label>
       </nav>
+
       <div class="header-text">
         <h1>Welcome to Nature</h1>
         <p>A journey through time and sheep.</p>
-        <p>To see how cotton is made...</p>
-      </div>
-      <div class="arrow-down">
-        <a href="#"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-circle-arrow-down"
-          >
-            <circle cx="12" cy="12" r="10" />
-            <path d="M12 8v8" />
-            <path d="m8 12 4 4 4-4" />
-          </svg>
-        </a>
+        <p>To see how... cotton... is mage, made I mean...</p>
+        <div class="arrow-down-about">
+          <a href="#about"><i class="fa-solid fa-circle-arrow-down"></i> </a>
+        </div>
       </div>
     </header>
-    <section class="about">
-      <h2>Träffa läget</h2>
-      <div class="team-container"></div>
+    <section id="about">
+      <h2>Träffa laget</h2>
+      <div class="team-container">
+        <div class="team-member">
+          <h3>Rakib</h3>
+          <img src="assets/profiles/Rakib_Square.png" alt="Rakib" />
+          <p>
+            <i class="fa-solid fa-quote-right"></i>
+            Rakid är vår vassaste node-utvecklare och håller ständigt ett öga på
+            nya tekniker.
+          </p>
+        </div>
+        <div class="team-member">
+          <h3>Alexandra</h3>
+          <img src="assets/profiles/Alexandra_Square.png" alt="Alexandra" />
+          <p>
+            <i class="fa-solid fa-quote-right"></i>
+            Alexandra håller reda på alla äverallt och ser till att det flyter.
+          </p>
+        </div>
+        <div class="team-member">
+          <h3>Lasse</h3>
+          <img src="assets/profiles/NoPerson_Square.png" alt="Lasse" />
+          <p>
+            <i class="fa-solid fa-quote-right"></i>
+            Gör övriga saker... Mestadels...
+          </p>
+        </div>
+        <div class="team-member">
+          <h3>Sebastian</h3>
+          <img src="assets/profiles/Sebastian_Square.png" alt="Sebastian" />
+          <p>
+            <i class="fa-solid fa-quote-right"></i> En av våra utbildare som har
+            stor erfarenhet av ganska många saker.
+          </p>
+        </div>
+      </div>
+      <div class="arrow-down-section">
+        <a href="#contact"><i class="fa-solid fa-circle-arrow-down"></i> </a>
+      </div>
     </section>
+    <footer id="contact">
+      <div class="contact-container">
+        <div class="adress">
+          <p>Tegel Consulting AB</p>
+          <p>Agatvägen 18</p>
+          <p>168 60 Bromma</p>
+        </div>
+        <div class="direct-contact">
+          <p>info at tegelconsulting.se</p>
+          <p>070-123 456 78</p>
+        </div>
+        <div class="social-medias">
+          <p>
+            <i class="fa-brands fa-instagram"></i>
+            Instagram
+          </p>
+          <p>
+            <i class="fa-brands fa-twitter"></i>
+            Twitter
+          </p>
+          <p>
+            <i class="fa-brands fa-facebook"></i>
+            Facebook
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
