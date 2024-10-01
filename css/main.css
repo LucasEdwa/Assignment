@@ -62,6 +62,7 @@ body #home nav ul.menu-list {
   display: none;
   list-style: none;
   flex-direction: column;
+  margin-top: 30px;
   background-color: rgba(128, 128, 128, 0.301);
   width: 100%;
   padding: 10px;
@@ -83,13 +84,13 @@ body #home nav #menu-toggle:checked ~ ul.menu-list {
   display: flex;
 }
 body #home nav #menu-toggle:checked ~ #menu-button .bar1 {
-  transform: rotate(50deg) translate(7px, 7px);
+  transform: rotate(45deg) translate(7px, 7px);
 }
 body #home nav #menu-toggle:checked ~ #menu-button .bar2 {
   opacity: 0;
 }
 body #home nav #menu-toggle:checked ~ #menu-button .bar3 {
-  transform: rotate(-50deg) translate(7px, -7px);
+  transform: rotate(-45deg) translate(7px, -7px);
 }
 body #home .header-text {
   display: flex;

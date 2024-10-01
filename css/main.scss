@@ -69,6 +69,7 @@ body {
         display: none;
         list-style: none;
         flex-direction: column;
+        margin-top: 30px;
         background-color: rgba(128, 128, 128, 0.301);
         width: 100%;
         padding: 10px;
@@ -97,13 +98,13 @@ body {
 
         ~ #menu-button {
           .bar1 {
-            transform: rotate(50deg) translate(7px, 7px);
+            transform: rotate(45deg) translate(7px, 7px);
           }
           .bar2 {
             opacity: 0;
           }
           .bar3 {
-            transform: rotate(-50deg) translate(7px, -7px);
+            transform: rotate(-45deg) translate(7px, -7px);
           }
         }
       }
@@ -155,7 +156,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
+        
         img {
           width: 200px;
           height: 200px;
@@ -164,6 +165,7 @@ body {
         }
 
         p {
+          
           text-align: left;
           background-color: rgba(212, 210, 212, 255);
           width: 255px;
