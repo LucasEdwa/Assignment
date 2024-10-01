@@ -115,7 +115,7 @@ body #home .header-text .arrow-down-about a {
 }
 body #about {
   color: black;
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 body #about h2 {
   text-align: center;
