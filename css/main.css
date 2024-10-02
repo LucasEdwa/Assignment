@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   scroll-behavior: smooth;
 }
@@ -15,7 +16,6 @@ body #home {
   height: 100dvh;
   display: flex;
   flex-direction: column;
-  gap: 12rem;
 }
 body #home nav {
   display: flex;
@@ -62,11 +62,11 @@ body #home nav ul.menu-list {
   display: none;
   list-style: none;
   flex-direction: column;
-  margin-top: 30px;
   background-color: rgba(128, 128, 128, 0.301);
   width: 100%;
   padding: 10px;
   gap: 10px;
+  top: 25px;
   position: absolute;
   width: 94%;
 }
@@ -98,6 +98,8 @@ body #home .header-text {
   justify-content: center;
   align-items: center;
   text-align: justify;
+  gap: 3rem;
+  margin-top: 10rem;
 }
 body #home .header-text h1 {
   font-size: 2rem;
@@ -107,7 +109,7 @@ body #home .header-text p {
   width: 60%;
 }
 body #home .header-text .arrow-down-about {
-  margin-top: 11rem;
+  margin-top: 5rem;
 }
 body #home .header-text .arrow-down-about a {
   color: white;
@@ -146,6 +148,9 @@ body #about .team-container .team-member p {
   border-radius: 3px;
   padding: 25px;
   align-items: center;
+}
+body #about .team-container .team-member p span {
+  content: "”";
 }
 body #about .team-container .team-member p i {
   font-size: 2.5rem;
@@ -189,7 +194,6 @@ body #contact .contact-container .social-medias i {
   }
   body #home nav {
     background-color: rgba(128, 128, 128, 0.653);
-    padding: 10px;
   }
   body #home nav #menu-toggle {
     display: none;
@@ -198,7 +202,7 @@ body #contact .contact-container .social-medias i {
     display: flex;
     background-color: transparent;
     position: relative;
-    gap: 1rem;
+    top: 0;
     justify-content: flex-end;
     flex-direction: row;
   }

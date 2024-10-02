@@ -16,8 +16,6 @@ body {
     height: 100dvh;
     display: flex;
     flex-direction: column;
-    gap: 12rem;
-
     nav {
       display: flex;
       justify-content: flex-end;
@@ -69,11 +67,11 @@ body {
         display: none;
         list-style: none;
         flex-direction: column;
-        margin-top: 30px;
         background-color: rgba(128, 128, 128, 0.301);
         width: 100%;
         padding: 10px;
         gap: 10px;
+        top: 25px;
         position: absolute;
         width: 94%;
 
@@ -116,7 +114,8 @@ body {
       justify-content: center;
       align-items: center;
       text-align: justify;
-
+      gap: 3rem;
+      margin-top: 10rem;
       h1 {
         font-size: 2rem;
       }
@@ -127,7 +126,7 @@ body {
       }
 
       .arrow-down-about {
-        margin-top: 11rem;
+        margin-top: 5rem;
 
         a {
           color: white;
@@ -165,7 +164,9 @@ body {
         }
 
         p {
-          
+          span {
+            content: "\201D";
+          }
           text-align: left;
           background-color: rgba(212, 210, 212, 255);
           width: 255px;

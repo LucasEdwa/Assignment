@@ -6,7 +6,7 @@
       min-height: 100vh;
       nav {
         background-color: rgba(128, 128, 128, 0.653);
-        padding: 10px;
+        
         #menu-toggle {
           display: none;
         }
@@ -14,10 +14,9 @@
           display: flex;
           background-color: transparent;
           position: relative;
-          gap: 1rem;
+          top: 0;
           justify-content: flex-end;
           flex-direction: row;
-
           li {
             list-style: none;
             text-decoration: none;
