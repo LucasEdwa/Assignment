@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html {
   scroll-behavior: smooth;
 }
@@ -95,25 +94,24 @@ body #home nav #menu-toggle:checked ~ #menu-button .bar3 {
 body #home .header-text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  text-align: justify;
-  gap: 3rem;
-  margin-top: 10rem;
+  text-align: center;
+  gap: 0.7rem;
 }
 body #home .header-text h1 {
-  font-size: 2rem;
+  margin-top: 12rem;
+  font-size: 1.5rem;
 }
 body #home .header-text p {
   font-size: 1.2rem;
-  width: 60%;
+  width: 70%;
 }
 body #home .header-text .arrow-down-about {
-  margin-top: 5rem;
+  margin-top: 11rem;
 }
 body #home .header-text .arrow-down-about a {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 body #about {
   color: black;
@@ -122,7 +120,6 @@ body #about {
 body #about h2 {
   text-align: center;
   font-size: 2rem;
-  padding-top: 10px;
 }
 body #about .team-container {
   display: flex;
@@ -134,23 +131,24 @@ body #about .team-container .team-member {
   justify-content: center;
   align-items: center;
 }
+body #about .team-container .team-member h3 {
+  font-size: 1rem;
+}
 body #about .team-container .team-member img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
 }
 body #about .team-container .team-member p {
   text-align: left;
   background-color: rgb(212, 210, 212);
-  width: 255px;
+  width: 250px;
   border-radius: 3px;
   padding: 25px;
   align-items: center;
-}
-body #about .team-container .team-member p span {
-  content: "”";
 }
 body #about .team-container .team-member p i {
   font-size: 2.5rem;
@@ -188,15 +186,9 @@ body #contact .contact-container .social-medias i {
   body {
     width: 100%;
   }
-  body #home {
-    gap: 6rem;
-    min-height: 100vh;
-  }
   body #home nav {
     background-color: rgba(128, 128, 128, 0.653);
-  }
-  body #home nav #menu-toggle {
-    display: none;
+    padding: 0;
   }
   body #home nav ul.menu-list {
     display: flex;
@@ -219,14 +211,19 @@ body #contact .contact-container .social-medias i {
   }
   body #home .header-text {
     text-align: center;
-    margin-top: 7rem;
+    gap: 0;
+    margin-top: 9rem;
+  }
+  body #home .header-text h1 {
+    margin-top: 3rem;
+    font-size: 1.4rem;
   }
   body #home .header-text .arrow-down-about {
-    margin-top: 10rem;
+    margin-top: 14rem;
   }
   body #home .header-text .arrow-down-about a {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
   body #about .team-container {
     display: grid;
@@ -240,6 +237,10 @@ body #contact .contact-container .social-medias i {
   body #about .team-container .team-member p {
     width: 450px;
     padding: 15px;
+  }
+  body #about .team-container .team-member:nth-child(3) p {
+    width: -moz-fit-content;
+    width: fit-content;
   }
   body #contact .contact-container {
     justify-content: space-around;

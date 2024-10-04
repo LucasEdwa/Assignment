@@ -111,26 +111,26 @@ body {
     .header-text {
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      text-align: justify;
-      gap: 3rem;
-      margin-top: 10rem;
+      text-align: center;
+      gap: 0.7rem;
       h1 {
-        font-size: 2rem;
+        margin-top: 12rem;
+
+        font-size: 1.5rem;
       }
 
       p {
         font-size: 1.2rem;
-        width: 60%;
+        width: 70%;
       }
 
       .arrow-down-about {
-        margin-top: 5rem;
+        margin-top: 11rem;
 
         a {
           color: white;
-          font-size: 1.5rem;
+          font-size: 1.2rem;
         }
       }
     }
@@ -143,7 +143,6 @@ body {
     h2 {
       text-align: center;
       font-size: 2rem;
-      padding-top: 10px;
     }
 
     .team-container {
@@ -155,21 +154,21 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
+        h3 {
+          font-size: 1rem;
+        }
         img {
           width: 200px;
           height: 200px;
           border-radius: 50%;
           object-fit: cover;
+          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
         }
 
         p {
-          span {
-            content: "\201D";
-          }
           text-align: left;
           background-color: rgba(212, 210, 212, 255);
-          width: 255px;
+          width: 250px;
           border-radius: 3px;
           padding: 25px;
           align-items: center;
